@@ -3,7 +3,10 @@
   <head>
     <title>The Basic Language of the Web: HTML</title>
     <meta charset="UTF-8" />
-    <link href="style.css" rel="stylesheet" />
+    <link
+      href="style.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -15,24 +18,26 @@
         <a href="">Flexbox</a>
         <a href="">CSS Grid</a>
       </nav>
-
-      <p>
-        Posted by
-        <strong>Laura Jones</strong>
-        on Monday, June 21st 2027
-      </p>
     </header>
 
-    <article id="1">
+    <article>
       <header>
         <h2>The Basic Language of the Web: HTML</h2>
-        <img src="Rzeczy z kursu/02-HTML-Fundamentals/laura-jones.jpg" alt="Picture of the author" height="50" width="50" />
-        <p>
-          Posted by
-          <strong>Laura Jones</strong>
-          on Monday, June 21 st 2027
-        </p>
-        <img src="Rzeczy z kursu/02-HTML-Fundamentals/post-img.jpg" alt="HTML code of a screen" height="200" width="500" />
+        <img
+          src="Rzeczy z kursu/02-HTML-Fundamentals/laura-jones.jpg"
+          alt="Picture of the author"
+          height="50"
+          width="50"
+        />
+
+        <p id="author">Posted by <strong>Laura Jones</strong>on Monday, June 21 st 2027</p>
+
+        <img
+          src="Rzeczy z kursu/02-HTML-Fundamentals/post-img.jpg"
+          alt="HTML code of a screen"
+          height="200"
+          width="500"
+        />
       </header>
 
       <p>
@@ -41,16 +46,20 @@
       </p>
 
       <h3>What is HTML?</h3>
+
       <p>
         HTML stands for
         <strong>H</strong>yper<strong>T</strong>ext<strong>M</strong>arkup<strong>L</strong>anguage. It's a markup language
         that web developers use to structure and describe the content of a webpage (not a programming language).
       </p>
+
       <p>
         HTML consists of elements that describe different types of content: paragraphs, links, headings, images, video, etc.
         Web browsers understand HTML and render HTML code as websites.
       </p>
+
       <p>In HTML, each element is made up of 3 parts:</p>
+
       <ol>
         <li>The opening tag</li>
         <li>The closing tag</li>
@@ -61,7 +70,11 @@
 
       <p>
         You can learn more at the
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" alt="HTML: HyperText Markup Language ">MDN Web Docs</a>.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          alt="HTML: HyperText Markup Language "
+          >MDN Web Docs</a
+        >.
       </p>
 
       <h3>Why should you learn HTML?</h3>
@@ -75,34 +88,49 @@
         <li>To have fun 😃</li>
       </ul>
       <p>Hopefully you learned something new here. See you next time!</p>
-      <footer>Copyright &copy; 2027 by The Code Magazine.</footer>
+      <footer><p id="copyright">Copyright &copy; 2027 by The Code Magazine.</p></footer>
     </article>
     <aside>
       <h4>Related posts</h4>
-      <ul>
+
+      <ul class="related">
         <li>
-          <img src="Rzeczy z kursu/02-HTML-Fundamentals/related-1.jpg" alt="Working man" height="60" width="60" />
+          <img
+            src="Rzeczy z kursu/02-HTML-Fundamentals/related-1.jpg"
+            alt="Working man"
+            height="60"
+            width="60"
+          />
+
           <a href="">How to Learn Web Development</a>
         </li>
-        <p>By Jonas Schmedtmann</p>
+
+        <p class="related-author">By Jonas Schmedtmann</p>
+
         <li>
-          <img src="Rzeczy z kursu/02-HTML-Fundamentals/related-2.jpg" alt="Picture of lightstorm" width="60" height="60" />
+          <img
+            src="Rzeczy z kursu/02-HTML-Fundamentals/related-2.jpg"
+            alt="Picture of lightstorm"
+            width="60"
+            height="60"
+          />
+
           <a href="">Unknown Powers of CSS</a>
         </li>
-        <p>By Jim Dillon</p>
+
+        <p class="related-author">By Jim Dillon</p>
+
         <li>
-          <img src="Rzeczy z kursu/02-HTML-Fundamentals/related-3.jpg" alt="Code on the screen" height="60" width="60" /><a
-            href=""
-            >Why JavaScript is Awesome</a
-          >
+          <img
+            src="Rzeczy z kursu/02-HTML-Fundamentals/related-3.jpg"
+            alt="Code on the screen"
+            height="60"
+            width="60"
+          /><a href="#">Why JavaScript is Awesome</a>
         </li>
-        <p>By Matlida</p>
+
+        <p class="related-author">By Matlida</p>
       </ul>
     </aside>
-    <!---->
-    <!--
-      123
-      321
-    -->
   </body>
 </html>
