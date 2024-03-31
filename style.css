@@ -1,18 +1,25 @@
 /* page */
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-	font-family: sans-serif;
+/*  ta gwiazdka powoduje ze to co w nim jest dotyczy wszystkich elementów i nie jest "inherited"
+* {		
+	border-top: #1098ad 10px solid;
+} */
+
+body {
 	color: #444;
+	font-family: sans-serif;
+	border-top: 10px solid #1098ad;
 }
+
+nav {
+	font-size: 18px;
+}
+
 h1,
 h2,
 h3 {
 	color: #1098ad;
 }
+
 h1 {
 	font-size: 26px;
 	text-transform: uppercase;
@@ -59,6 +66,7 @@ li {
 #copyright {
 	font-size: 16px;
 }
+
 /* classes */
 .related-author {
 	font-size: 18px;
@@ -113,3 +121,21 @@ a:active {
 	background-color: black;
 	font-style: italic;
 }
+/* z 4 mozliwych ustawien pierwszenstwo bedzie miec: 							 
+pseudoklasy maja przewage waznosci nad atrybutami
+#copyright {
+	color: red; /* 1 							
+} 
+
+/* .copyright {
+	color: blue; /* 3 							
+} 
+
+/* .text {
+	color: yellow; /* 2 						
+} 
+
+/* footer p {
+	color: green !important; /* 4							
+}
+/* jeśli dodamy do footer p !important to zostanie on nr 1 - ale nie powinien być uzywany */
