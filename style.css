@@ -4,6 +4,11 @@
 	border-top: #1098ad 10px solid;
 } */
 
+* {
+	padding: 0; /*to zeruje nam automatyczy margin i padding stosowany przez przeglądarkę - a robimy to bo to utrudnia stylowanie wg nas*/
+	margin: 0;
+}
+
 body {
 	color: #444;
 	font-family: sans-serif;
@@ -47,6 +52,11 @@ p {
 
 li {
 	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+li:last-child {
+	margin-bottom: 0; /*tworząc ta pseudoklase usuwamy z ostatniego punktu margin, bo to chcemy mieć miedzy punktami a nie na koncu*/
 }
 
 /* footer p {
@@ -79,12 +89,20 @@ li {
 
 .main-header {
 	background-color: #f7f7f7;
+	/* padding: 20px;
+	padding-left: 40px;
+	padding-right: 40px; */
+	padding: 20px 40px; /* to samo co wyżej ale krócej*/
+	margin-bottom: 60px;
 }
 
 aside {
 	background-color: #f7f7f7;
 	border-top: 5px solid #1098ad;
 	border-bottom: 5px solid #1098ad;
+	/* padding-top: 50px;
+	padding-bottom: 50px;  to samo co niżej pierwsza wartość to góra dół a druga prawo lewo*/
+	padding: 50px 0;
 }
 /* PSEUDOKOD */
 /* li:nth-child(2) {
